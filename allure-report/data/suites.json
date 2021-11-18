@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ru.vakulina.homework5.CrmTests",
+    "children" : [ {
+      "name" : "crmProjectTest()",
+      "uid" : "fc740e81f73313e4",
+      "parentUid" : "8e5ab9a8f10f66d7a53daf724c056992",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637243762624,
+        "stop" : 1637243792479,
+        "duration" : 29855
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "crmContactPersonTest()",
+      "uid" : "d7b5759341bd2598",
+      "parentUid" : "8e5ab9a8f10f66d7a53daf724c056992",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637243792916,
+        "stop" : 1637243814098,
+        "duration" : 21182
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8e5ab9a8f10f66d7a53daf724c056992"
+  } ]
+}

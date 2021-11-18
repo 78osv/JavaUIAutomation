@@ -1,6 +1,7 @@
 package ru.vakulina.homework5;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,25 +31,21 @@ public class CrmTests {
         login(driver);
     }
 
+    @Step("Проверка создания контактного лица")
     @Test
     void crmContactPersonTest() throws InterruptedException {
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(By.xpath("//span[text()='Контрагенты']/parent::a")))
                 .build().perform();
         driver.findElement(By.xpath("//span[.='Контактные лица']")).click();
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='Создать контактное лицо']")));
         driver.findElement(By.xpath("//a[.='Создать контактное лицо']")).click();
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("crm_contact[lastName]")));
         driver.findElement(By.name("crm_contact[lastName]")).sendKeys("123");
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("crm_contact[firstName]")));
         driver.findElement(By.name("crm_contact[firstName]")).sendKeys("456");
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Укажите организацию']")));
         driver.findElement(By.xpath("//span[.='Укажите организацию']")).click();
-       // Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='12323142342134']")));
         driver.findElement(By.xpath("//div[text()='12323142342134']")).click();
         driver.findElement(By.name("crm_contact[jobTitle]")).sendKeys("QA");
@@ -58,21 +55,18 @@ public class CrmTests {
         assertThat(creatingContact, hasText("Контактное лицо сохранено"));
 
     }
-
+    @Step ("Проверка невозможности создание проекта с уже используемым значением")
     @Test
     void crmProjectTest() throws InterruptedException {
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(By.xpath("//span[text()='Проекты']/parent::a")))
                 .build().perform();
         driver.findElement(By.xpath("//span[.='Все проекты']")).click();
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='Создать проект']")));
         driver.findElement(By.xpath("//a[.='Создать проект']")).click();
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("crm_project[name]")));
         driver.findElement(By.name("crm_project[name]")).sendKeys("My Project");
         driver.findElement(By.xpath("//span[.='Укажите организацию']")).click();
-        //Thread.sleep(5000);
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='12323142342134']")));
         driver.findElement(By.xpath("//div[text()='12323142342134']")).click();
 

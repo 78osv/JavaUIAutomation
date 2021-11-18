@@ -1,0 +1,47 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "HOME-PC",
+    "children" : [ {
+      "name" : "11552@HOME-PC.main(1)",
+      "children" : [ {
+        "name" : "crmContactPersonTest()",
+        "uid" : "d7b5759341bd2598",
+        "parentUid" : "eba2b75544c8d240695192b785b8581b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637243792916,
+          "stop" : 1637243814098,
+          "duration" : 21182
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "crmProjectTest()",
+        "uid" : "fc740e81f73313e4",
+        "parentUid" : "eba2b75544c8d240695192b785b8581b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1637243762624,
+          "stop" : 1637243792479,
+          "duration" : 29855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "eba2b75544c8d240695192b785b8581b"
+    } ],
+    "uid" : "71b5e50a4d0a26a79917b38d69f0a874"
+  } ]
+}

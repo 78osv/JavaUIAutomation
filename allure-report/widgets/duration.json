@@ -1,0 +1,21 @@
+[ {
+  "uid" : "d7b5759341bd2598",
+  "name" : "crmContactPersonTest()",
+  "time" : {
+    "start" : 1637243792916,
+    "stop" : 1637243814098,
+    "duration" : 21182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc740e81f73313e4",
+  "name" : "crmProjectTest()",
+  "time" : {
+    "start" : 1637243762624,
+    "stop" : 1637243792479,
+    "duration" : 29855
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
