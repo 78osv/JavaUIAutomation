@@ -1,4 +1,4 @@
-package smoke;
+package example;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

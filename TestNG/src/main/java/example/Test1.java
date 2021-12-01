@@ -1,6 +1,6 @@
-package smoke;
+package example;
 
-import com.beust.jcommander.Parameter;
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 

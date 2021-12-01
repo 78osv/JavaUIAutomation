@@ -1,8 +1,6 @@
-package smoke;
+package example;
 
 import org.testng.Assert;
-import org.testng.IRetryAnalyzer;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 public class Test4 {

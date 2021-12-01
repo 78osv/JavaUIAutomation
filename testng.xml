@@ -13,8 +13,8 @@
 
 
         <classes>
-            <class name="smoke.Test1"></class>
-            <class name="smoke.Test2"></class>
+            <class name="example.Test1"></class>
+            <class name="example.Test2"></class>
         </classes>
     </test>
 
